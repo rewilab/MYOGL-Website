@@ -1,21 +1,6 @@
 @import url("assets/css/variables.css");
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  font-family: var(--font-sans);
-  color: var(--color-text);
-  background: var(--color-bg);
-  line-height: var(--line-height-base);
-  font-size: var(--font-size-base);
-}
-
-img {
-  max-width: 100%;
-}
+@import url("assets/css/reset.css");
+@import url("assets/css/base.css");
 
 .container {
   width: min(1100px, calc(100% - 2rem));
