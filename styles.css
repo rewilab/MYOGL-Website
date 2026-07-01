@@ -3,21 +3,8 @@
 @import url("assets/css/base.css");
 @import url("assets/css/typography.css");
 @import url("assets/css/layout.css");
+@import url("assets/css/navigation.css");
 @import url("assets/css/responsive.css");
-
-.brand {
-  color: var(--color-white);
-  text-decoration: none;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-}
-
-.nav-links a {
-  color: var(--color-white);
-  text-decoration: none;
-  opacity: 0.9;
-}
 
 .eyebrow {
   text-transform: uppercase;
