@@ -3,71 +3,298 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MYOGL | Modern Web Foundation</title>
-    <meta
-      name="description"
-      content="A clean starting point for the MYOGL website project."
-    />
+    <meta name="description" content="Morobe Yawo Oil & Gas Limited is an independent energy exploration company focused on Papua New Guinea and long-term value creation for investors." />
+    <meta name="keywords" content="MYOGL, oil and gas, Papua New Guinea, APPL 674, energy investment" />
+    <meta name="theme-color" content="#082b49" />
+    <title>MYOGL | Independent Energy Exploration in Papua New Guinea</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Open+Sans:wght@400;600;700&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <!-- Header -->
     <header class="hero">
-      <nav class="nav container">
-        <a class="brand" href="#">MYOGL</a>
-        <div class="nav-links">
-          <a href="#about">About</a>
-          <a href="#features">Features</a>
-          <a href="#contact">Contact</a>
+      <div class="site-header">
+        <div class="container navbar">
+          <a class="brand" href="#" aria-label="MYOGL home">
+            <span class="brand-mark">MY</span>
+            <span>MYOGL</span>
+          </a>
+          <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation">☰</button>
+          <nav id="site-nav" class="nav-links" aria-label="Primary navigation">
+            <a href="#about">About</a>
+            <a href="#appl674">APPL 674</a>
+            <a href="#investment">Investment</a>
+            <a href="#leadership">Leadership</a>
+            <a href="#news">News</a>
+            <a href="#contact">Contact</a>
+          </nav>
         </div>
-      </nav>
+      </div>
 
       <div class="container hero-content">
-        <div>
-          <p class="eyebrow">Project foundation</p>
-          <h1>Build your next web experience on a strong base.</h1>
-          <p class="lead">
-            This starter page gives the MYOGL website a polished foundation with
-            responsive layout, modern styling, and room to grow.
-          </p>
-          <a class="button" href="#features">Explore the starter</a>
+        <div class="hero-copy">
+          <p class="section-label">Corporate energy platform</p>
+          <h1>Morobe Yawo Oil &amp; Gas Limited</h1>
+          <p class="lead">Independent energy exploration in Papua New Guinea, building long-term value through disciplined upstream development and transparent stakeholder engagement.</p>
+          <div class="hero-actions">
+            <a class="button" href="#appl674">Explore APPL 674</a>
+            <a class="button-secondary" href="#investment">Investor Information</a>
+          </div>
+          <div class="hero-grid" aria-hidden="true">
+            <div class="hero-block"></div>
+            <div class="hero-block"></div>
+            <div class="hero-block"></div>
+          </div>
+        </div>
+
+        <div class="hero-panel reveal">
+          <div class="hero-stats">
+            <div class="hero-stat">
+              <span class="stat-number">167</span>
+              <span class="stat-label">Graticular Blocks</span>
+            </div>
+            <div class="hero-stat">
+              <span class="stat-number">13,608 sq km</span>
+              <span class="stat-label">Exploration Area</span>
+            </div>
+            <div class="hero-stat">
+              <span class="stat-number">4,200m</span>
+              <span class="stat-label">Water Depth</span>
+            </div>
+          </div>
         </div>
       </div>
     </header>
 
+    <!-- Main content -->
     <main>
-      <section id="about" class="section container">
-        <h2>About this foundation</h2>
-        <p>
-          The structure is intentionally simple so you can extend it quickly with
-          more sections, content, or application features.
-        </p>
+      <!-- About section -->
+      <section id="about" class="section">
+        <div class="container two-column">
+          <div class="section-intro reveal">
+            <p class="section-label">About MYOGL</p>
+            <h2>Focused on responsible upstream growth.</h2>
+            <p class="lead">MYOGL is a privately held energy company advancing exploration activity in Papua New Guinea with a disciplined strategy, strong local partnerships and a long-term view on reservoir value.</p>
+          </div>
+          <div class="info-card reveal">
+            <h3 class="card-title">Strategic focus</h3>
+            <ul class="list-check">
+              <li>Deepwater basin evaluation and technical de-risking.</li>
+              <li>Transparent governance for investors and regulators.</li>
+              <li>Long-duration partnerships anchored in local capability.</li>
+            </ul>
+          </div>
+        </div>
       </section>
 
-      <section id="features" class="section section-alt">
-        <div class="container feature-grid">
-          <article>
-            <h3>Responsive</h3>
-            <p>Layouts adapt cleanly from mobile to desktop screens.</p>
-          </article>
-          <article>
-            <h3>Fast to customize</h3>
-            <p>HTML, CSS, and JavaScript are separated for easy iteration.</p>
-          </article>
-          <article>
-            <h3>Ready for expansion</h3>
-            <p>Add pages, animations, and data-driven sections as needed.</p>
-          </article>
+      <!-- APPL 674 section -->
+      <section id="appl674" class="section section-surface">
+        <div class="container two-column">
+          <div class="reveal">
+            <p class="section-label">APPL 674</p>
+            <h2>Advancing a high-potential offshore acreage position.</h2>
+            <p class="lead">The project reflects a focused exploration mandate with substantial geological upside and a clear pathway to value creation through systematic data acquisition and evaluation.</p>
+            <a class="link-arrow" href="#contact">Request project materials</a>
+          </div>
+          <div class="panel-accent reveal">
+            <div class="stats-grid">
+              <div class="metric">
+                <strong>1.4Tcf</strong>
+                <span>Prospective resource potential</span>
+              </div>
+              <div class="metric">
+                <strong>30+</strong>
+                <span>Years of sector experience leadership</span>
+              </div>
+              <div class="metric">
+                <strong>100%</strong>
+                <span>Investor-first governance approach</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PNG section -->
+      <section class="section">
+        <div class="container grid-2">
+          <div class="info-card reveal">
+            <p class="section-label">Why Papua New Guinea</p>
+            <h3 class="card-title">A strategic frontier for energy development.</h3>
+            <p>PNG offers a compelling combination of underexplored basin potential, established offshore infrastructure corridors and a government focus on attracting long-term capital.</p>
+          </div>
+          <div class="card-list two reveal">
+            <div class="info-card">
+              <h3 class="card-title">Geology</h3>
+              <p>Prospective plays supported by regional analogs and modern seismic interpretation.</p>
+            </div>
+            <div class="info-card">
+              <h3 class="card-title">Logistics</h3>
+              <p>Access to supply routes and technical services for disciplined development planning.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Investment section -->
+      <section id="investment" class="section section-surface">
+        <div class="container section-grid">
+          <div class="section-intro reveal">
+            <p class="section-label">Investment opportunity</p>
+            <h2>Built for long-term value creation.</h2>
+            <p class="lead">The company is structured to support carefully managed capital participation with a commitment to transparency, governance and sustainable execution.</p>
+          </div>
+          <div class="grid-3 reveal">
+            <div class="stat-card">
+              <h3 class="card-title">Disciplined capital</h3>
+              <p class="card-meta">Focused allocation toward technical workstreams and de-risking.</p>
+            </div>
+            <div class="stat-card">
+              <h3 class="card-title">Clear strategy</h3>
+              <p class="card-meta">A phased approach designed to protect downside while preserving upside.</p>
+            </div>
+            <div class="stat-card">
+              <h3 class="card-title">Transparent updates</h3>
+              <p class="card-meta">Regular communication with stakeholders and capital partners.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Corporate statistics -->
+      <section class="section">
+        <div class="container section-grid">
+          <div class="section-intro reveal">
+            <p class="section-label">Corporate statistics</p>
+            <h2>Performance and positioning.</h2>
+          </div>
+          <div class="stats-grid reveal">
+            <div class="stat-card">
+              <strong>167</strong>
+              <p>Blocks under active strategic evaluation.</p>
+            </div>
+            <div class="stat-card">
+              <strong>13,608</strong>
+              <p>Square kilometers in the core acreage footprint.</p>
+            </div>
+            <div class="stat-card">
+              <strong>4,200m</strong>
+              <p>Water depth in the key offshore corridor.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Leadership preview -->
+      <section id="leadership" class="section section-surface">
+        <div class="container section-grid">
+          <div class="section-intro reveal">
+            <p class="section-label">Leadership preview</p>
+            <h2>Experienced leadership aligned to investor outcomes.</h2>
+          </div>
+          <div class="grid-3 reveal">
+            <article class="leadership-card">
+              <img src="images/leadership/paul-sepet.jpg" alt="Paul Sepet" />
+              <div>
+                <h3>Paul Sepet</h3>
+                <p class="card-meta">Founder &amp; Managing Director</p>
+              </div>
+            </article>
+            <article class="leadership-card">
+              <img src="images/leadership/simon-karapus.jpg" alt="Simon Karapus" />
+              <div>
+                <h3>Simon Karapus</h3>
+                <p class="card-meta">Director &amp; Company Secretary</p>
+              </div>
+            </article>
+            <article class="leadership-card">
+              <img src="images/leadership/johnathan-dsa.jpg" alt="Johnathan D'Sa" />
+              <div>
+                <h3>Johnathan D'Sa</h3>
+                <p class="card-meta">Director – Investor Relations &amp; Corporate Affairs</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- News -->
+      <section id="news" class="section">
+        <div class="container section-grid">
+          <div class="section-intro reveal">
+            <p class="section-label">Latest news</p>
+            <h2>Recent updates from the MYOGL platform.</h2>
+          </div>
+          <div class="grid-3 reveal">
+            <article class="news-card">
+              <h3 class="card-title">Strategic exploration update</h3>
+              <p>MYOGL continues to advance technical workstreams in line with its phased development strategy.</p>
+            </article>
+            <article class="news-card">
+              <h3 class="card-title">Investor briefing underway</h3>
+              <p>Follow-on engagement with institutional and strategic stakeholders remains active.</p>
+            </article>
+            <article class="news-card">
+              <h3 class="card-title">Partnerships and governance</h3>
+              <p>Governance and execution protocols remain central to the company’s operating model.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section id="contact" class="section">
+        <div class="container">
+          <div class="panel-accent reveal">
+            <div class="two-column">
+              <div>
+                <p class="section-label">Investor contact</p>
+                <h2>Explore the MYOGL opportunity.</h2>
+                <p class="lead">Connect with the team for investor materials, project updates and corporate information.</p>
+              </div>
+              <div class="hero-actions">
+                <a class="button" href="mailto:investors@myogl.com">Request investor pack</a>
+                <a class="button-secondary" href="mailto:contact@myogl.com">Contact the team</a>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
 
-    <footer id="contact" class="footer">
-      <div class="container">
-        <p>© <span id="year"></span> MYOGL. All rights reserved.</p>
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <h3>MYOGL</h3>
+          <p>Independent energy exploration in Papua New Guinea.</p>
+        </div>
+        <div>
+          <h3>Explore</h3>
+          <div class="footer-nav">
+            <a href="#about">About</a>
+            <a href="#appl674">APPL 674</a>
+            <a href="#investment">Investment</a>
+          </div>
+        </div>
+        <div>
+          <h3>Contact</h3>
+          <div class="footer-nav">
+            <a href="mailto:contact@myogl.com">contact@myogl.com</a>
+            <a href="tel:+67500000000">+675 0000 0000</a>
+            <a href="#">Port Moresby, PNG</a>
+          </div>
+        </div>
+      </div>
+      <div class="container footer-note">
+        <p>© 2026 MYOGL. All rights reserved. <a href="#">Privacy</a> · <a href="#">Disclaimer</a></p>
       </div>
     </footer>
 
-    <script src="script.js"></script>
     <script src="assets/js/navigation.js"></script>
+    <script src="assets/js/animations.js"></script>
+    <script src="assets/js/main.js"></script>
   </body>
 </html>

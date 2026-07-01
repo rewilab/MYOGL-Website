@@ -1,0 +1,39 @@
+/* Cards */
+.card,
+.info-card,
+.stat-card,
+.news-card {
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-soft);
+}
+
+.info-card,
+.stat-card,
+.news-card {
+  padding: var(--space-8);
+}
+
+.card-list {
+  display: grid;
+  gap: var(--space-6);
+}
+
+.card-list.two {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.card-list.three {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.card-title {
+  margin-bottom: var(--space-3);
+  color: var(--color-primary);
+}
+
+.card-meta {
+  color: var(--color-muted);
+  font-size: 0.95rem;
+}

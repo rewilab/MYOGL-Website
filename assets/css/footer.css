@@ -1,0 +1,28 @@
+/* Footer */
+.site-footer {
+  background: var(--color-primary);
+  color: rgba(255, 255, 255, 0.8);
+  padding: var(--space-16) 0;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.6fr 0.6fr;
+  gap: var(--space-8);
+}
+
+.footer-nav {
+  display: grid;
+  gap: var(--space-2);
+}
+
+.footer-nav a {
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.footer-note {
+  margin-top: var(--space-6);
+  padding-top: var(--space-6);
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  font-size: 0.95rem;
+}

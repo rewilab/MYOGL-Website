@@ -1,0 +1,93 @@
+@import url("variables.css");
+@import url("reset.css");
+@import url("typography.css");
+@import url("layout.css");
+@import url("navigation.css");
+@import url("hero.css");
+@import url("buttons.css");
+@import url("cards.css");
+@import url("footer.css");
+@import url("animations.css");
+@import url("responsive.css");
+
+body {
+  background: var(--color-white);
+}
+
+.section {
+  position: relative;
+}
+
+.section-intro {
+  max-width: 760px;
+  margin-bottom: var(--space-10);
+}
+
+.section-surface {
+  background: var(--color-light);
+}
+
+.panel-accent {
+  padding: var(--space-8);
+  border-radius: var(--radius-lg);
+  background: linear-gradient(135deg, rgba(8, 43, 73, 0.94), rgba(14, 94, 138, 0.92));
+  color: var(--color-white);
+  box-shadow: var(--shadow-soft);
+}
+
+.list-check {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.list-check li {
+  display: flex;
+  gap: var(--space-3);
+  align-items: flex-start;
+}
+
+.list-check li::before {
+  content: "✓";
+  color: var(--color-accent);
+  font-weight: 700;
+}
+
+.metric {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.metric strong {
+  font-size: 1.8rem;
+  color: var(--color-primary);
+}
+
+.leadership-card {
+  display: grid;
+  gap: var(--space-4);
+  justify-items: start;
+}
+
+.leadership-card img {
+  width: 100%;
+  border-radius: var(--radius-lg);
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+}
+
+.news-card p {
+  margin-bottom: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
