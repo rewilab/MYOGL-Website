@@ -1,24 +1,9 @@
 @import url("assets/css/variables.css");
 @import url("assets/css/reset.css");
 @import url("assets/css/base.css");
-
-.container {
-  width: min(1100px, calc(100% - 2rem));
-  margin: 0 auto;
-}
-
-.hero {
-  background: linear-gradient(135deg, var(--color-hero), var(--color-accent));
-  color: var(--color-white);
-  padding-bottom: var(--space-16);
-}
-
-.nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: var(--space-5) 0;
-}
+@import url("assets/css/typography.css");
+@import url("assets/css/layout.css");
+@import url("assets/css/responsive.css");
 
 .brand {
   color: var(--color-white);
@@ -28,37 +13,19 @@
   text-transform: uppercase;
 }
 
-.nav-links {
-  display: flex;
-  gap: var(--space-4);
-}
-
 .nav-links a {
   color: var(--color-white);
   text-decoration: none;
   opacity: 0.9;
 }
 
-.hero-content {
-  padding: var(--space-16) 0 var(--space-8);
-  max-width: 700px;
-}
-
 .eyebrow {
   text-transform: uppercase;
   letter-spacing: 0.18em;
-  font-size: var(--font-size-sm);
   opacity: 0.8;
 }
 
-h1 {
-  font-size: clamp(2rem, 4vw, 3.2rem);
-  line-height: var(--line-height-tight);
-  margin: var(--space-1) 0 var(--space-4);
-}
-
 .lead {
-  font-size: var(--font-size-lg);
   color: rgba(255, 255, 255, 0.88);
   margin-bottom: var(--space-6);
 }
@@ -73,41 +40,10 @@ h1 {
   font-weight: 600;
 }
 
-.section {
-  padding: var(--space-16) 0;
-}
-
-.section-alt {
-  background: var(--color-surface);
-}
-
-.feature-grid {
-  display: grid;
-  gap: var(--space-6);
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
 .feature-grid article {
   background: var(--color-bg);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
   padding: var(--space-5);
   box-shadow: var(--shadow-sm);
-}
-
-.footer {
-  padding: var(--space-6) 0 var(--space-8);
-  color: var(--color-muted);
-  text-align: center;
-}
-
-@media (max-width: 760px) {
-  .feature-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .nav {
-    flex-direction: column;
-    gap: var(--space-3);
-  }
 }
