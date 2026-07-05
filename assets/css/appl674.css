@@ -186,3 +186,506 @@
     font-size: 1.3rem;
   }
 }
+
+/* Clean source-derived APPL 674 visual integration */
+.technical-visual-grid {
+  display: grid;
+  gap: var(--space-6);
+  margin-top: var(--space-8);
+}
+
+.technical-visual-grid-two {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: start;
+}
+
+.technical-visual-heading {
+  max-width: 52rem;
+  margin-top: var(--space-8);
+  margin-bottom: var(--space-4);
+}
+
+.technical-visual-heading h3 {
+  margin-bottom: var(--space-2);
+  color: var(--color-primary);
+}
+
+.technical-visual-heading p {
+  margin: 0;
+  color: var(--color-muted);
+}
+
+.technical-figure {
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+}
+
+.technical-figure-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.technical-figure figcaption {
+  padding: 0.9rem 1rem 1rem;
+  border-top: 1px solid var(--color-border);
+  color: var(--color-muted);
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+
+.technical-visual-single {
+  max-width: 58rem;
+  margin: var(--space-8) auto 0;
+}
+
+.technical-figure-wide {
+  width: 100%;
+}
+
+@media (max-width: 900px) {
+  .technical-visual-grid-two {
+    grid-template-columns: 1fr;
+  }
+
+  .technical-figure {
+    max-width: 44rem;
+    margin-inline: auto;
+  }
+}
+
+@media (max-width: 760px) {
+  .technical-visual-grid {
+    gap: var(--space-4);
+    margin-top: var(--space-6);
+  }
+
+  .technical-visual-heading {
+    margin-top: var(--space-6);
+  }
+
+  .technical-visual-single {
+    margin-top: var(--space-6);
+  }
+
+  .technical-figure figcaption {
+    font-size: 0.88rem;
+  }
+}
+
+/* Print / PDF export — normal paginated A4 output */
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 12mm 10mm 14mm;
+  }
+
+  html,
+  body {
+    width: auto !important;
+    min-width: 0 !important;
+    height: auto !important;
+    overflow: visible !important;
+    background: #fff !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  body {
+    font-size: 10pt;
+    line-height: 1.4;
+  }
+
+  .skip-link,
+  .site-header,
+  .nav-links,
+  .hero-actions,
+  .mobile-menu-toggle {
+    display: none !important;
+  }
+
+  .hero,
+  .section,
+  .container,
+  .content-grid,
+  .card-grid,
+  .technical-visual-grid,
+  .technical-visual-single,
+  .table-wrap,
+  .timeline,
+  .faq-list,
+  .contact-card,
+  footer {
+    width: auto !important;
+    max-width: none !important;
+    height: auto !important;
+    min-height: 0 !important;
+    overflow: visible !important;
+    transform: none !important;
+  }
+
+  .hero,
+  .section {
+    padding: 8mm 0 !important;
+  }
+
+  .container {
+    padding-inline: 0 !important;
+  }
+
+  .content-grid,
+  .card-grid,
+  .technical-visual-grid-two {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 5mm !important;
+  }
+
+  .technical-figure,
+  .card,
+  .contact-card,
+  .table-wrap,
+  .timeline li,
+  details {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .technical-figure-image,
+  img {
+    max-width: 100% !important;
+    height: auto !important;
+    object-fit: contain !important;
+  }
+
+  .technical-figure-image {
+    max-height: 225mm !important;
+  }
+
+  .technical-visual-grid {
+    break-before: auto;
+  }
+
+  h1,
+  h2,
+  h3,
+  .section-intro,
+  .technical-visual-heading {
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+
+  table {
+    width: 100% !important;
+    font-size: 8.5pt;
+  }
+
+  thead {
+    display: table-header-group;
+  }
+
+  tr {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  a {
+    color: inherit !important;
+    text-decoration: none !important;
+  }
+
+  .site-footer {
+    break-before: auto;
+  }
+}
+
+/* FINAL A4 PDF PAGINATION OVERRIDE */
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 12mm 10mm 14mm 10mm;
+  }
+
+  html, body {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    overflow: visible !important;
+    zoom: 1 !important;
+  }
+
+  body {
+    margin: 0 !important;
+    background: #fff !important;
+    font-size: 9.5pt !important;
+    line-height: 1.4 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  *, *::before, *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+
+  .skip-link,
+  .site-header,
+  .nav-links,
+  .hero-actions,
+  .mobile-menu-toggle {
+    display: none !important;
+  }
+
+  main, section, header, footer,
+  .hero, .container, .content-grid, .card-grid,
+  .technical-visual-grid, .technical-visual-single,
+  .table-wrap, .timeline, .faq-list, .contact-card {
+    position: static !important;
+    float: none !important;
+    width: auto !important;
+    max-width: none !important;
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    overflow: visible !important;
+    transform: none !important;
+  }
+
+  .hero {
+    padding: 8mm 0 !important;
+    break-after: page !important;
+    page-break-after: always !important;
+  }
+
+  main > section {
+    padding: 7mm 0 !important;
+    break-before: page !important;
+    page-break-before: always !important;
+  }
+
+  .container {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .content-grid,
+  .card-grid,
+  .technical-visual-grid-two {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 5mm !important;
+  }
+
+  .technical-figure,
+  .card,
+  .contact-card,
+  .table-wrap,
+  .timeline li,
+  details {
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+  }
+
+  /* Each technical figure gets readable space and may start a fresh page. */
+  .technical-visual-grid .technical-figure,
+  .technical-visual-single .technical-figure {
+    break-before: auto !important;
+    page-break-before: auto !important;
+  }
+
+  .technical-figure-image {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    max-height: 205mm !important;
+    object-fit: contain !important;
+  }
+
+  .technical-visual-single {
+    max-width: 180mm !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  h1, h2, h3, h4,
+  .section-label, .section-intro,
+  .technical-visual-heading {
+    break-after: avoid !important;
+    page-break-after: avoid !important;
+  }
+
+  table {
+    width: 100% !important;
+    font-size: 8.5pt !important;
+  }
+
+  thead { display: table-header-group !important; }
+
+  tr {
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+  }
+
+  img {
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+
+  a {
+    color: inherit !important;
+    text-decoration: none !important;
+  }
+}
+
+/* =========================================================
+   FINAL UNCLUTTERED APPL HEADER
+   Logo left; navigation separate; hero copy below banner.
+   ========================================================= */
+
+.appl674-hero .site-header {
+  position: relative !important;
+  width: 100% !important;
+  background: rgba(6, 35, 65, 0.97) !important;
+}
+
+.appl674-hero .navbar {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 2rem !important;
+  width: 100% !important;
+  padding: 1rem 0 !important;
+}
+
+/* Move logo back left and keep it readable without dominating banner. */
+.appl-brand {
+  margin-left: 1.25rem !important;
+  flex: 0 0 auto !important;
+}
+
+.appl-brand-logo {
+  display: block !important;
+  width: auto !important;
+  height: 130px !important;
+  max-width: 390px !important;
+  object-fit: contain !important;
+}
+
+/* Navigation remains wholly inside the dark-blue banner. */
+.appl674-hero .nav-links {
+  display: flex !important;
+  position: static !important;
+  align-items: center !important;
+  justify-content: flex-end !important;
+  flex-wrap: wrap !important;
+  gap: 0.65rem 1.2rem !important;
+  width: auto !important;
+  max-width: 620px !important;
+  margin: 0 1.5rem 0 0 !important;
+  padding: 0 !important;
+  transform: none !important;
+}
+
+.appl674-hero .nav-links a {
+  display: inline-flex !important;
+  width: auto !important;
+  white-space: nowrap !important;
+}
+
+/* Critical repair: all white APPL text begins BELOW the blue header. */
+.appl674-hero .hero-content {
+  display: block !important;
+  width: 100% !important;
+  max-width: 1040px !important;
+  margin: 0 auto !important;
+  padding: 3.25rem 2rem 5rem !important;
+  transform: none !important;
+}
+
+.appl674-hero .hero-copy {
+  width: 100% !important;
+  max-width: 820px !important;
+  min-width: 0 !important;
+  margin: 0 !important;
+}
+
+/* Metrics become a clean row below the main copy instead of crowding right edge. */
+.appl674-hero .hero-panel {
+  position: static !important;
+  width: 100% !important;
+  max-width: 820px !important;
+  margin: 2.25rem 0 0 !important;
+  padding: 0 !important;
+  transform: none !important;
+}
+
+.appl674-hero .hero-stats {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap: 1rem !important;
+}
+
+.appl674-hero .hero-stat {
+  min-width: 0 !important;
+}
+
+@media (max-width: 900px) {
+  .appl674-hero .navbar {
+    align-items: flex-start !important;
+    flex-direction: column !important;
+  }
+
+  .appl-brand {
+    margin-left: 1rem !important;
+  }
+
+  .appl-brand-logo {
+    height: 110px !important;
+    max-width: min(360px, calc(100vw - 2rem)) !important;
+  }
+
+  .appl674-hero .nav-links {
+    justify-content: flex-start !important;
+    margin: 0 1rem !important;
+    max-width: none !important;
+  }
+}
+
+@media (max-width: 650px) {
+  .appl674-hero .hero-content {
+    padding: 2.5rem 1.25rem 3.5rem !important;
+  }
+
+  .appl674-hero .hero-stats {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+@media print {
+  .appl674-hero .hero-content {
+    display: block !important;
+    max-width: none !important;
+    padding: 8mm 0 7mm !important;
+  }
+
+  .appl674-hero .hero-panel {
+    max-width: none !important;
+    margin-top: 5mm !important;
+  }
+
+  .appl674-hero .hero-stats {
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  }
+}
+
+
+
+/* ROOT FIX: APPL hero must stack header above hero content */
+.appl674-hero {
+  display: block !important;
+  align-items: initial !important;
+}
+
