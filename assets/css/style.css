@@ -209,3 +209,212 @@ section h2{font-size:2.25rem;font-weight:700;color:var(--primary);margin-bottom:
 .footer-grid{grid-template-columns:1fr;gap:1.5rem}
 .footer-logo{max-width:320px}
 }
+
+/* Homepage completion — clean APPL 674 geographic visual */
+.why-png-map-figure {
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid var(--color-border, #dfe5ec);
+  border-radius: var(--radius-lg, 16px);
+  background: var(--color-surface, #fff);
+  box-shadow: 0 18px 45px rgba(15, 35, 55, 0.10);
+}
+
+.why-png-map-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 720px;
+  object-fit: contain;
+  background: #fff;
+}
+
+.why-png-map-figure figcaption {
+  padding: 0.85rem 1rem 1rem;
+  border-top: 1px solid var(--color-border, #dfe5ec);
+  color: var(--color-muted, #5f6b76);
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+
+.hero-status-note {
+  max-width: 62rem;
+  margin-top: 1rem;
+  padding: 0.8rem 1rem;
+  border-left: 3px solid currentColor;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  opacity: 0.92;
+}
+
+@media (max-width: 900px) {
+  .why-png-map-image {
+    max-height: none;
+  }
+}
+
+@media print {
+  .why-png-map-figure {
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+    box-shadow: none !important;
+  }
+
+  .why-png-map-image {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    width: 100% !important;
+    max-height: 185mm !important;
+    object-fit: contain !important;
+  }
+
+  .hero-status-note {
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+  }
+}
+
+/* FINAL A4 PDF PAGINATION OVERRIDE */
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 12mm 10mm 14mm 10mm;
+  }
+
+  html, body {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    overflow: visible !important;
+    zoom: 1 !important;
+  }
+
+  body {
+    margin: 0 !important;
+    background: #fff !important;
+    font-size: 10pt !important;
+    line-height: 1.4 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  *, *::before, *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+
+  .site-header,
+  .skip-link {
+    display: none !important;
+  }
+
+  main, section, header, footer,
+  .hero, .container,
+  .hero-layout, .stats-grid, .why-png-layout,
+  .about-layout, .project-layout, .invest-layout,
+  .leadership-layout, .leadership-cards-col,
+  .ir-panel, .footer-grid {
+    position: static !important;
+    float: none !important;
+    width: auto !important;
+    max-width: none !important;
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    overflow: visible !important;
+    transform: none !important;
+  }
+
+  .hero,
+  .stats-section,
+  .why-png-section,
+  .about-section,
+  .project-section,
+  .invest-section,
+  .leadership-section,
+  .ir-section,
+  .site-footer {
+    padding-top: 7mm !important;
+    padding-bottom: 7mm !important;
+  }
+
+  /* Major corporate sections begin cleanly on a new PDF page. */
+  .why-png-section,
+  .about-section,
+  .project-section,
+  .invest-section,
+  .leadership-section,
+  .ir-section,
+  .site-footer {
+    break-before: page !important;
+    page-break-before: always !important;
+  }
+
+  .hero {
+    break-after: page !important;
+    page-break-after: always !important;
+  }
+
+  .stats-section {
+    break-before: auto !important;
+    page-break-before: auto !important;
+  }
+
+  .leadership-layout {
+    display: block !important;
+  }
+
+  .leadership-cards-col {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 5mm !important;
+  }
+
+  .leadership-card,
+  .stat-card,
+  .why-png-card,
+  .project-panel,
+  .invest-panel,
+  .snapshot-card,
+  .ir-contact,
+  .why-png-map-figure {
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+  }
+
+  .leadership-photo {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    width: 38mm !important;
+    height: 48mm !important;
+    object-fit: cover !important;
+    margin: 0 auto 3mm !important;
+  }
+
+  img {
+    max-width: 100% !important;
+    height: auto !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+
+  .why-png-map-image {
+    max-height: 170mm !important;
+    object-fit: contain !important;
+  }
+
+  h1, h2, h3, h4,
+  .section-label, .section-intro {
+    break-after: avoid !important;
+    page-break-after: avoid !important;
+  }
+
+  a {
+    color: inherit !important;
+    text-decoration: none !important;
+  }
+}
+
