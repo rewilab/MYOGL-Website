@@ -1,0 +1,1 @@
+document.addEventListener('DOMContentLoaded',()=>{console.log('MYOGL V3 loaded');});
