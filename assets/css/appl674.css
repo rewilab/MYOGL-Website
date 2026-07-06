@@ -690,3 +690,9 @@
   align-items: initial !important;
 }
 
+
+/* APPL 674 hero statistics contrast */
+.appl674-hero .stat-number,
+.appl674-hero .stat-label {
+  color: #ffffff;
+}
