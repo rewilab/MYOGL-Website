@@ -1,15 +1,437 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page Not Found | MYOGL</title>
-    <link rel="stylesheet" href="assets/css/style.css" />
-  </head>
-  <body>
-    <main class="container section">
-      <h1>404</h1>
-      <p class="lead">The page you requested could not be found.</p>
-    </main>
-  </body>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Page Not Found | Morobe Yawo Oil & Gas Limited</title>
+<meta name="description" content="The requested page could not be found on the Morobe Yawo Oil & Gas Limited corporate website.">
+<meta name="robots" content="noindex,follow">
+<link rel="icon" type="image/png" href="images/logos/icon.png">
+<link rel="stylesheet" href="assets/css/style.css">
+<style>
+/* 404 page only — scoped production layout */
+.error-page .error-hero{
+  min-height:68vh;
+  display:flex;
+  align-items:center;
+  padding:6rem 0;
+  background:
+    radial-gradient(circle at 80% 20%,rgba(255,255,255,.08),transparent 30%),
+    linear-gradient(135deg,var(--primary),#102f5b);
+  color:#fff;
+}
+.error-page .error-layout{
+  display:grid;
+  grid-template-columns:minmax(0,1.15fr) minmax(280px,.85fr);
+  gap:4rem;
+  align-items:center;
+}
+.error-page .error-code{
+  display:inline-block;
+  margin-bottom:.8rem;
+  color:var(--accent);
+  font-size:clamp(4.5rem,11vw,8.5rem);
+  line-height:.9;
+  font-weight:800;
+  letter-spacing:-.05em;
+}
+.error-page .error-content h1{
+  color:#fff;
+  font-size:clamp(2.1rem,4.5vw,4rem);
+  line-height:1.08;
+  margin-bottom:1.25rem;
+}
+.error-page .error-content .lead{
+  max-width:720px;
+  color:rgba(255,255,255,.88);
+  font-size:1.25rem;
+  line-height:1.75;
+  margin-bottom:1rem;
+}
+.error-page .error-content > p:not(.lead){
+  max-width:720px;
+  color:rgba(255,255,255,.75);
+  font-size:1.05rem;
+  line-height:1.75;
+}
+.error-page .error-actions{
+  display:flex;
+  flex-wrap:wrap;
+  gap:1rem;
+  margin-top:2rem;
+}
+.error-page .error-panel{
+  padding:2rem;
+  border:1px solid rgba(255,255,255,.16);
+  border-radius:1.25rem;
+  background:rgba(255,255,255,.07);
+  box-shadow:0 20px 50px rgba(0,0,0,.18);
+  backdrop-filter:blur(6px);
+}
+.error-page .error-panel h2{
+  color:var(--accent);
+  text-transform:uppercase;
+  letter-spacing:1.4px;
+  font-size:.9rem;
+  margin-bottom:1.25rem;
+}
+.error-page .error-panel p{
+  color:rgba(255,255,255,.82);
+  line-height:1.7;
+  margin-bottom:1.25rem;
+}
+.error-page .error-links{
+  display:grid;
+  gap:.75rem;
+}
+.error-page .error-links a{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:1rem;
+  padding:.85rem 1rem;
+  border:1px solid rgba(255,255,255,.14);
+  border-radius:.75rem;
+  background:rgba(255,255,255,.05);
+  color:#fff;
+  text-decoration:none;
+  font-weight:650;
+  transition:transform .2s ease,background .2s ease,border-color .2s ease;
+}
+.error-page .error-links a::after{
+  content:"→";
+  color:var(--accent);
+}
+.error-page .error-links a:hover,
+.error-page .error-links a:focus{
+  transform:translateX(3px);
+  background:rgba(255,255,255,.1);
+  border-color:rgba(255,255,255,.25);
+}
+.error-page .route-section{
+  padding:5.5rem 0;
+  background:var(--bg);
+}
+.error-page .route-intro{
+  max-width:800px;
+  margin-bottom:2.5rem;
+}
+.error-page .route-intro p:not(.section-label){
+  color:var(--text);
+  font-size:1.125rem;
+  line-height:1.8;
+}
+.error-page .route-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:1.5rem;
+}
+.error-page .route-card{
+  display:flex;
+  flex-direction:column;
+  min-height:100%;
+  padding:2rem;
+  background:var(--white);
+  border:1px solid var(--border);
+  border-radius:1.125rem;
+  box-shadow:0 2px 12px rgba(0,0,0,.06);
+}
+.error-page .route-card .route-label{
+  color:var(--accent);
+  text-transform:uppercase;
+  font-size:.78rem;
+  letter-spacing:1.2px;
+  font-weight:700;
+  margin-bottom:.7rem;
+}
+.error-page .route-card h3{
+  color:var(--primary);
+  font-size:1.2rem;
+  margin-bottom:.65rem;
+}
+.error-page .route-card p{
+  color:var(--muted);
+  font-size:1.02rem;
+  line-height:1.7;
+  margin-bottom:1.25rem;
+}
+.error-page .route-card .button{
+  align-self:flex-start;
+  margin-top:auto;
+}
+.error-page .help-section{
+  padding:5rem 0;
+  background:var(--white);
+}
+.error-page .help-panel{
+  max-width:1000px;
+  margin:0 auto;
+  display:grid;
+  grid-template-columns:1.2fr .8fr;
+  gap:2.5rem;
+  align-items:start;
+  padding:2.5rem;
+  background:var(--bg);
+  border:1px solid var(--border);
+  border-radius:1.125rem;
+}
+.error-page .help-copy p{
+  color:var(--text);
+  font-size:1.1rem;
+  line-height:1.8;
+  margin-bottom:1.25rem;
+}
+.error-page .help-contact{
+  padding:2rem;
+  background:var(--white);
+  border:1px solid var(--border);
+  border-radius:1.125rem;
+}
+.error-page .help-contact h3{
+  color:var(--accent);
+  text-transform:uppercase;
+  letter-spacing:1.3px;
+  font-size:.9rem;
+  margin-bottom:1rem;
+}
+.error-page .help-contact-name{
+  color:var(--primary);
+  font-size:1.3rem;
+  font-weight:700;
+  margin-bottom:.25rem;
+}
+.error-page .help-contact-role{
+  color:var(--hero-blue);
+  font-size:.95rem;
+  font-weight:600;
+  line-height:1.5;
+  margin-bottom:1rem;
+}
+.error-page .help-contact a{
+  color:var(--hero-blue);
+  font-weight:700;
+  text-decoration:none;
+}
+.error-page .footer-logo{max-width:300px}
+
+@media(max-width:960px){
+  .error-page .error-layout{grid-template-columns:1fr;gap:2.5rem}
+  .error-page .route-grid{grid-template-columns:1fr 1fr}
+  .error-page .help-panel{grid-template-columns:1fr}
+}
+@media(max-width:640px){
+  .error-page .error-hero{padding:4.5rem 0}
+  .error-page .route-grid{grid-template-columns:1fr}
+  .error-page .error-actions{flex-direction:column;align-items:stretch}
+  .error-page .error-actions a{text-align:center}
+  .error-page .footer-logo{max-width:260px}
+}
+@media print{
+  .error-page .error-hero{min-height:auto !important}
+  .error-page .error-layout{
+    display:grid !important;
+    grid-template-columns:1.2fr .8fr !important;
+    gap:7mm !important;
+  }
+  .error-page .route-grid{
+    display:grid !important;
+    grid-template-columns:repeat(3,minmax(0,1fr)) !important;
+    gap:5mm !important;
+  }
+  .error-page .help-panel{
+    display:grid !important;
+    grid-template-columns:1.2fr .8fr !important;
+    gap:6mm !important;
+  }
+  .error-page .error-panel,.error-page .route-card,.error-page .help-panel{
+    break-inside:avoid !important;
+    page-break-inside:avoid !important;
+  }
+  .error-page .footer-logo{max-width:65mm !important}
+}
+</style>
+</head>
+<body class="error-page">
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
+<div class="site-header">
+<div class="container">
+<div class="navbar">
+<a class="brand" href="index.html" aria-label="MYOGL home">
+<img src="images/logos/header-logo.png" alt="MYOGL" class="brand-logo">
+</a>
+<nav aria-label="Primary navigation">
+<ul class="nav-links">
+<li><a href="about.html">About</a></li>
+<li><a href="appl674.html">APPL 674</a></li>
+<li><a href="investment.html">Investment</a></li>
+<li><a href="leadership.html">Leadership</a></li>
+<li><a href="news.html">News</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+
+<main id="main-content">
+
+<section class="error-hero" aria-labelledby="error-title">
+<div class="container">
+<div class="error-layout">
+<div class="error-content">
+<div class="error-code" aria-hidden="true">404</div>
+<h1 id="error-title">The Page You Requested Could Not Be Found</h1>
+<p class="lead">The address may be incorrect, the page may have moved, or the requested resource may no longer be available at this location.</p>
+<p>You can return to the MYOGL homepage, continue to the APPL 674 project overview, or use the navigation options below to find current corporate information.</p>
+<div class="error-actions">
+<a class="button" href="index.html">Return to Homepage</a>
+<a class="button-secondary" href="appl674.html">View APPL 674</a>
+</div>
+</div>
+
+<aside class="error-panel" aria-label="Quick navigation">
+<h2>Quick Navigation</h2>
+<p>Continue directly to a key area of the MYOGL corporate website.</p>
+<div class="error-links">
+<a href="about.html">About MYOGL</a>
+<a href="investment.html">Investment Opportunity</a>
+<a href="downloads.html">Document Centre</a>
+<a href="contact.html">Contact MYOGL</a>
+</div>
+</aside>
+</div>
+</div>
+</section>
+
+<section class="route-section">
+<div class="container">
+<div class="route-intro">
+<p class="section-label">EXPLORE MYOGL</p>
+<h2>Find the Information You Need</h2>
+<p>Use these direct routes to continue through MYOGL's current corporate, project and investor information.</p>
+</div>
+
+<div class="route-grid">
+<article class="route-card">
+<p class="route-label">Company</p>
+<h3>About MYOGL</h3>
+<p>Learn about Morobe Yawo Oil &amp; Gas Limited, its direction and responsible long-term approach.</p>
+<a class="button" href="about.html">View About</a>
+</article>
+
+<article class="route-card">
+<p class="route-label">Project</p>
+<h3>APPL 674</h3>
+<p>Review the public overview of MYOGL's exploration application in the Huon Basin, Papua New Guinea.</p>
+<a class="button" href="appl674.html">View Project</a>
+</article>
+
+<article class="route-card">
+<p class="route-label">Investment</p>
+<h3>Strategic Engagement</h3>
+<p>Explore MYOGL's approach to qualified investor and strategic partnership discussions.</p>
+<a class="button" href="investment.html">View Investment</a>
+</article>
+
+<article class="route-card">
+<p class="route-label">Leadership</p>
+<h3>Leadership Team</h3>
+<p>Meet the people guiding MYOGL's corporate direction, stakeholder engagement and investor relations.</p>
+<a class="button" href="leadership.html">View Leadership</a>
+</article>
+
+<article class="route-card">
+<p class="route-label">News</p>
+<h3>News &amp; Updates</h3>
+<p>Visit the official channel for verified corporate and project communications.</p>
+<a class="button" href="news.html">View News</a>
+</article>
+
+<article class="route-card">
+<p class="route-label">Documents</p>
+<h3>Document Centre</h3>
+<p>Access approved public resources and information-request routes for relevant materials.</p>
+<a class="button" href="downloads.html">View Downloads</a>
+</article>
+</div>
+</div>
+</section>
+
+<section class="help-section">
+<div class="container">
+<div class="help-panel">
+<div class="help-copy">
+<p class="section-label">NEED ASSISTANCE?</p>
+<h2>Contact MYOGL</h2>
+<p>If you followed a link to a page that should exist, or you require corporate, project or investor-relations information, contact MYOGL directly.</p>
+<p>For APPL 674, strategic investment discussions and relevant professional enquiries, please identify your organisation and the information you are seeking.</p>
+<div class="error-actions">
+<a class="button" href="contact.html">Contact Page</a>
+<a class="button-secondary" href="mailto:jd@myogl.biz?subject=MYOGL%20Website%20Enquiry">Send Email</a>
+</div>
+</div>
+
+<aside class="help-contact">
+<h3>Investor Relations</h3>
+<p class="help-contact-name">Johnathan D'sa</p>
+<p class="help-contact-role">Director – Investor Relations &amp; Corporate Affairs</p>
+<a href="mailto:jd@myogl.biz">jd@myogl.biz</a>
+</aside>
+</div>
+</div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+<div class="container footer-grid">
+<div>
+<img src="images/logos/corporate-logo.png" alt="Morobe Yawo Oil &amp; Gas Limited" class="footer-logo">
+<p class="footer-company-name">Morobe Yawo Oil &amp; Gas Limited</p>
+<p class="footer-summary">An independent Papua New Guinea energy company focused on responsibly advancing offshore petroleum exploration opportunities through disciplined technical evaluation, strategic partnerships and long-term stakeholder value.</p>
+</div>
+
+<div>
+<h3>Company</h3>
+<div class="footer-nav">
+<a href="about.html">About MYOGL</a>
+<a href="leadership.html">Leadership</a>
+<a href="news.html">News</a>
+<a href="contact.html">Contact</a>
+</div>
+</div>
+
+<div>
+<h3>Project &amp; Investment</h3>
+<div class="footer-nav">
+<a href="appl674.html">APPL 674</a>
+<a href="investment.html">Investment Opportunity</a>
+<a href="downloads.html">Downloads</a>
+<a href="contact.html">Investor Relations</a>
+</div>
+</div>
+
+<div>
+<h3>Investor Relations</h3>
+<div class="footer-nav">
+<p class="footer-ir-name">Johnathan D'sa</p>
+<p class="footer-ir-position">Director – Investor Relations &amp; Corporate Affairs</p>
+<a class="footer-ir-email" href="mailto:jd@myogl.biz">jd@myogl.biz</a>
+<p class="footer-ir-note">For strategic investment discussions, technical partnerships and corporate enquiries relating to APPL 674.</p>
+</div>
+</div>
+</div>
+
+<div class="container footer-bottom">
+<p>&copy; 2026 Morobe Yawo Oil &amp; Gas Limited. All Rights Reserved.</p>
+<div class="footer-bottom-links">
+<a href="privacy.html">Privacy</a>
+<a href="disclaimer.html">Disclaimer</a>
+</div>
+</div>
+</footer>
+
+<script src="assets/js/script.js"></script>
+</body>
 </html>
