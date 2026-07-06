@@ -1,15 +1,503 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Privacy | MYOGL</title>
-    <link rel="stylesheet" href="assets/css/style.css" />
-  </head>
-  <body>
-    <main class="container section">
-      <h1>Privacy Policy</h1>
-      <p class="lead">Privacy content is included as part of the corporate site framework.</p>
-    </main>
-  </body>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Privacy Policy | Morobe Yawo Oil & Gas Limited</title>
+<meta name="description" content="Privacy Policy for the Morobe Yawo Oil & Gas Limited corporate website.">
+<link rel="icon" type="image/png" href="images/logos/icon.png">
+<link rel="stylesheet" href="assets/css/style.css">
+<style>
+/* Privacy page only — scoped production layout */
+.privacy-page .policy-hero-note{
+  margin-top:1.25rem;
+  padding:1rem 1.1rem;
+  border-left:3px solid var(--accent);
+  background:rgba(255,255,255,.08);
+  color:rgba(255,255,255,.86);
+  font-size:.95rem;
+  line-height:1.65;
+}
+.privacy-page .policy-section{
+  padding:6rem 0;
+  background:var(--white);
+}
+.privacy-page .policy-section.alt{background:var(--bg)}
+.privacy-page .policy-layout{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) 300px;
+  gap:3rem;
+  align-items:start;
+}
+.privacy-page .policy-content{
+  min-width:0;
+}
+.privacy-page .policy-content h2{
+  margin-bottom:1.25rem;
+}
+.privacy-page .policy-content h3{
+  color:var(--primary);
+  font-size:1.3rem;
+  line-height:1.4;
+  margin:2rem 0 .75rem;
+}
+.privacy-page .policy-content p{
+  font-size:1.08rem;
+  line-height:1.8;
+  color:var(--text);
+  margin-bottom:1.25rem;
+}
+.privacy-page .policy-content ul{
+  margin:0 0 1.5rem 1.35rem;
+}
+.privacy-page .policy-content li{
+  font-size:1.05rem;
+  line-height:1.75;
+  color:var(--muted);
+  margin-bottom:.55rem;
+}
+.privacy-page .policy-content a{
+  color:var(--hero-blue);
+  font-weight:600;
+}
+.privacy-page .policy-aside{
+  position:sticky;
+  top:120px;
+}
+.privacy-page .policy-card{
+  padding:1.75rem;
+  background:var(--bg);
+  border:1px solid var(--border);
+  border-radius:1.125rem;
+  box-shadow:0 2px 12px rgba(0,0,0,.06);
+}
+.privacy-page .policy-card h3{
+  color:var(--accent);
+  text-transform:uppercase;
+  letter-spacing:1.2px;
+  font-size:.85rem;
+  margin-bottom:1rem;
+}
+.privacy-page .policy-meta{
+  display:grid;
+  gap:.9rem;
+}
+.privacy-page .policy-meta-row{
+  padding-bottom:.9rem;
+  border-bottom:1px solid var(--border);
+}
+.privacy-page .policy-meta-row:last-child{
+  padding-bottom:0;
+  border-bottom:0;
+}
+.privacy-page .policy-meta-label{
+  display:block;
+  color:var(--muted);
+  font-size:.82rem;
+  margin-bottom:.2rem;
+}
+.privacy-page .policy-meta-value{
+  display:block;
+  color:var(--primary);
+  font-size:.95rem;
+  font-weight:700;
+  line-height:1.45;
+  overflow-wrap:anywhere;
+}
+.privacy-page .principles-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:1.5rem;
+}
+.privacy-page .principle-card{
+  padding:2rem;
+  background:var(--white);
+  border:1px solid var(--border);
+  border-radius:1.125rem;
+  box-shadow:0 2px 12px rgba(0,0,0,.06);
+}
+.privacy-page .principle-card h3{
+  color:var(--primary);
+  font-size:1.2rem;
+  margin-bottom:.65rem;
+}
+.privacy-page .principle-card p{
+  color:var(--muted);
+  font-size:1.02rem;
+  line-height:1.75;
+}
+.privacy-page .contact-panel{
+  max-width:1000px;
+  margin:0 auto;
+  display:grid;
+  grid-template-columns:1.2fr .8fr;
+  gap:2.5rem;
+  align-items:start;
+  padding:2.5rem;
+  background:var(--white);
+  border:1px solid var(--border);
+  border-radius:1.125rem;
+  box-shadow:0 4px 20px rgba(0,0,0,.08);
+}
+.privacy-page .contact-copy p{
+  font-size:1.125rem;
+  line-height:1.8;
+  color:var(--text);
+  margin-bottom:1.25rem;
+}
+.privacy-page .privacy-contact{
+  padding:2rem;
+  background:var(--bg);
+  border:1px solid var(--border);
+  border-radius:1.125rem;
+}
+.privacy-page .privacy-contact h3{
+  color:var(--accent);
+  text-transform:uppercase;
+  letter-spacing:1.3px;
+  font-size:.9rem;
+  margin-bottom:1rem;
+}
+.privacy-page .privacy-contact-name{
+  color:var(--primary);
+  font-size:1.3rem;
+  font-weight:700;
+  margin-bottom:.25rem;
+}
+.privacy-page .privacy-contact-role{
+  color:var(--hero-blue);
+  font-size:.95rem;
+  font-weight:600;
+  line-height:1.5;
+  margin-bottom:1rem;
+}
+.privacy-page .privacy-contact a{
+  color:var(--hero-blue);
+  font-weight:700;
+  text-decoration:none;
+}
+.privacy-page .privacy-contact a:hover,
+.privacy-page .privacy-contact a:focus{
+  color:var(--primary);
+  text-decoration:underline;
+}
+.privacy-page .snapshot-row{
+  display:grid;
+  grid-template-columns:90px minmax(0,1fr);
+  gap:1rem;
+  align-items:start;
+}
+.privacy-page .snapshot-value{
+  text-align:left;
+  line-height:1.45;
+  overflow-wrap:anywhere;
+}
+.privacy-page .footer-logo{max-width:300px}
+
+@media(max-width:960px){
+  .privacy-page .policy-layout{grid-template-columns:1fr}
+  .privacy-page .policy-aside{position:static}
+  .privacy-page .principles-grid{grid-template-columns:1fr 1fr}
+  .privacy-page .contact-panel{grid-template-columns:1fr}
+}
+@media(max-width:640px){
+  .privacy-page .principles-grid{grid-template-columns:1fr}
+  .privacy-page .snapshot-row{grid-template-columns:1fr;gap:.25rem}
+  .privacy-page .footer-logo{max-width:260px}
+}
+@media print{
+  .privacy-page .policy-layout{
+    display:grid !important;
+    grid-template-columns:minmax(0,1fr) 55mm !important;
+    gap:6mm !important;
+  }
+  .privacy-page .policy-aside{position:static !important}
+  .privacy-page .principles-grid{
+    display:grid !important;
+    grid-template-columns:repeat(3,minmax(0,1fr)) !important;
+    gap:5mm !important;
+  }
+  .privacy-page .contact-panel{
+    display:grid !important;
+    grid-template-columns:1.2fr .8fr !important;
+    gap:6mm !important;
+  }
+  .privacy-page .policy-card,
+  .privacy-page .principle-card,
+  .privacy-page .contact-panel{
+    break-inside:avoid !important;
+    page-break-inside:avoid !important;
+  }
+  .privacy-page .footer-logo{max-width:65mm !important}
+}
+</style>
+</head>
+<body class="privacy-page">
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
+<!-- Sticky Navigation -->
+<div class="site-header">
+<div class="container">
+<div class="navbar">
+<a class="brand" href="index.html" aria-label="MYOGL home"><img src="images/logos/header-logo.png" alt="MYOGL" class="brand-logo"></a>
+<nav aria-label="Primary navigation">
+<ul class="nav-links">
+<li><a href="about.html">About</a></li>
+<li><a href="appl674.html">APPL 674</a></li>
+<li><a href="investment.html">Investment</a></li>
+<li><a href="leadership.html">Leadership</a></li>
+<li><a href="news.html">News</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+
+<main id="main-content">
+
+<!-- Hero -->
+<header class="hero">
+<div class="container">
+<div class="hero-layout">
+<div class="hero-content">
+<p class="section-label">PRIVACY POLICY</p>
+<h1>How MYOGL Handles Information Provided Through This Website</h1>
+<p class="lead">Morobe Yawo Oil &amp; Gas Limited respects the importance of privacy and aims to handle personal information received through its corporate website and professional communications responsibly.</p>
+<p>This policy explains, in general terms, the types of information that may be received, why it may be used, how it may be handled and how privacy-related enquiries can be directed to MYOGL.</p>
+<div class="hero-actions">
+<a class="button" href="#privacy-policy">Read Privacy Policy</a>
+<a class="button-secondary" href="contact.html">Contact MYOGL</a>
+</div>
+<ul class="hero-tags">
+<li>Corporate Website</li>
+<li>Professional Enquiries</li>
+<li>Responsible Handling</li>
+<li>Privacy Requests</li>
+</ul>
+<div class="policy-hero-note"><strong>Scope notice:</strong> This policy is written for the current MYOGL corporate website and direct professional communications. It does not claim that MYOGL uses unverified advertising trackers, payment systems, user accounts or marketing platforms.</div>
+</div>
+<aside class="hero-panel">
+<div class="snapshot-card">
+<h3 class="snapshot-heading">POLICY SUMMARY</h3>
+<div class="snapshot-row">
+<span class="snapshot-key">Company</span>
+<span class="snapshot-value">Morobe Yawo Oil &amp; Gas Limited</span>
+</div>
+<div class="snapshot-row">
+<span class="snapshot-key">Website</span>
+<span class="snapshot-value">Corporate Information &amp; Enquiries</span>
+</div>
+<div class="snapshot-row">
+<span class="snapshot-key">Contact</span>
+<span class="snapshot-value">jd@myogl.biz</span>
+</div>
+<div class="snapshot-row">
+<span class="snapshot-key">Effective</span>
+<span class="snapshot-value">6 July 2026</span>
+</div>
+</div>
+</aside>
+</div>
+</div>
+</header>
+
+<!-- Privacy Principles -->
+<section class="policy-section alt">
+<div class="container">
+<p class="section-label">PRIVACY APPROACH</p>
+<h2>Core Principles</h2>
+<div class="principles-grid">
+<article class="principle-card">
+<h3>Purpose</h3>
+<p>Information should be used for legitimate corporate, professional, communication, security or enquiry-handling purposes relevant to MYOGL.</p>
+</article>
+<article class="principle-card">
+<h3>Proportionality</h3>
+<p>MYOGL aims to handle information in a manner proportionate to the nature of the enquiry, relationship or website interaction.</p>
+</article>
+<article class="principle-card">
+<h3>Care</h3>
+<p>Reasonable care should be taken when storing, accessing, sharing and retaining information received through corporate communications.</p>
+</article>
+</div>
+</div>
+</section>
+
+<!-- Main Policy -->
+<section class="policy-section" id="privacy-policy">
+<div class="container">
+<div class="policy-layout">
+<article class="policy-content">
+<p class="section-label">FULL POLICY</p>
+<h2>Privacy Policy</h2>
+
+<h3>1. About This Policy</h3>
+<p>This Privacy Policy applies to personal information that may be received by Morobe Yawo Oil &amp; Gas Limited ("MYOGL", "we", "us" or "our") through this corporate website and through direct communications initiated in connection with the website.</p>
+<p>The website is intended primarily to provide corporate, project and investor-relations information and to support professional enquiries. This policy should be read in that context.</p>
+
+<h3>2. Information You Choose to Provide</h3>
+<p>MYOGL may receive information that you voluntarily provide when you contact the Company by email or through another direct professional communication channel. Depending on the enquiry, this may include:</p>
+<ul>
+<li>your name and professional role;</li>
+<li>your organisation or company name;</li>
+<li>your email address and other contact details you choose to provide;</li>
+<li>the subject and content of your enquiry;</li>
+<li>documents, proposals, introductions or supporting information you choose to send; and</li>
+<li>other information relevant to a proposed corporate, investor, technical or strategic discussion.</li>
+</ul>
+<p>Please avoid sending unnecessary sensitive personal information through ordinary email communications.</p>
+
+<h3>3. Technical Information Associated with Website Access</h3>
+<p>Like many websites, the hosting environment or web server may generate routine technical records when the website is accessed. Depending on the hosting and security configuration, these records may include information such as an Internet Protocol address, browser or device information, requested pages, access times, referral information and technical error or security records.</p>
+<p>Such information may be used for website operation, troubleshooting, security, abuse prevention, performance review and related administrative purposes. MYOGL does not state in this policy that it uses any specific analytics or advertising platform unless such use is separately confirmed.</p>
+
+<h3>4. How Information May Be Used</h3>
+<p>Information received by MYOGL may be used where reasonably relevant to:</p>
+<ul>
+<li>review and respond to enquiries;</li>
+<li>communicate with investors, technical partners, stakeholders, service providers or other professional contacts;</li>
+<li>evaluate proposed strategic, technical or corporate engagement;</li>
+<li>maintain appropriate records of professional communications;</li>
+<li>operate, secure, maintain and improve the website;</li>
+<li>protect MYOGL, its systems, personnel, stakeholders and legitimate interests;</li>
+<li>comply with applicable legal, regulatory or official requirements; and</li>
+<li>manage disputes, claims or other legitimate corporate matters.</li>
+</ul>
+
+<h3>5. Sharing of Information</h3>
+<p>MYOGL may share information where reasonably necessary for legitimate corporate purposes, including with authorised personnel, professional advisers, technical specialists, service providers or other parties involved in reviewing or progressing a relevant enquiry or matter.</p>
+<p>Information may also be disclosed where required or permitted by applicable law, regulation, court process, lawful authority or where reasonably necessary to protect legitimate rights, security or interests.</p>
+<p>MYOGL does not state that personal information is sold to third parties for advertising purposes.</p>
+
+<h3>6. International Communications</h3>
+<p>MYOGL operates in a context that may involve communications with organisations and professional contacts in Papua New Guinea and other countries. If you initiate an international corporate, investment or technical enquiry, information may be accessed, reviewed or communicated across jurisdictions where reasonably necessary for that engagement.</p>
+<p>Privacy and data-protection rules may differ between countries. MYOGL aims to handle information responsibly and in a manner appropriate to the circumstances of the communication.</p>
+
+<h3>7. Retention</h3>
+<p>Information may be retained for as long as reasonably necessary for the purpose for which it was received, for ongoing professional or corporate engagement, for record-keeping, security, legal, regulatory, dispute-management or other legitimate business needs.</p>
+<p>Retention periods may vary depending on the nature of the information and the relevant relationship or matter.</p>
+
+<h3>8. Information Security</h3>
+<p>MYOGL aims to use reasonable administrative and technical care appropriate to the nature of the information it handles. However, no website, email system, transmission method or storage environment can be guaranteed to be completely secure.</p>
+<p>Users should consider the sensitivity of information before sending it through ordinary email or other electronic channels.</p>
+
+<h3>9. External Links</h3>
+<p>This website may contain links to external websites or services. MYOGL is not responsible for the privacy practices, security or content of third-party websites. Users should review the relevant third party's own privacy information before providing personal information.</p>
+
+<h3>10. Cookies and Similar Technologies</h3>
+<p>MYOGL does not use this policy to claim the presence of specific advertising, behavioural-tracking or analytics cookies that have not been verified. Basic technical cookies or similar mechanisms may nevertheless be used by the website, hosting environment or essential services where required for operation, security or functionality.</p>
+<p>If the website's technology changes materially, this policy should be reviewed and updated accordingly.</p>
+
+<h3>11. Your Privacy Enquiry or Request</h3>
+<p>Depending on applicable law and the circumstances, you may contact MYOGL to ask about personal information you believe the Company holds about you, request correction of inaccurate information, raise a privacy concern or request deletion where appropriate.</p>
+<p>MYOGL may need to verify identity and may retain information where required or permitted for legal, regulatory, security, record-keeping or other legitimate reasons.</p>
+
+<h3>12. Children</h3>
+<p>This corporate website is intended for general corporate and professional audiences and is not designed as a service directed to children. MYOGL does not knowingly invite children to submit personal information for investor, technical or strategic engagement purposes.</p>
+
+<h3>13. Changes to This Policy</h3>
+<p>MYOGL may update this Privacy Policy to reflect changes in the website, corporate practices, technology, legal requirements or other relevant circumstances. The effective date shown on this page should be updated when a revised policy is published.</p>
+
+<h3>14. Contact</h3>
+<p>Privacy-related enquiries may be directed to MYOGL through Investor Relations &amp; Corporate Affairs at <a href="mailto:jd@myogl.biz?subject=MYOGL%20Privacy%20Enquiry">jd@myogl.biz</a>.</p>
+</article>
+
+<aside class="policy-aside">
+<div class="policy-card">
+<h3>Policy Details</h3>
+<div class="policy-meta">
+<div class="policy-meta-row">
+<span class="policy-meta-label">Organisation</span>
+<span class="policy-meta-value">Morobe Yawo Oil &amp; Gas Limited</span>
+</div>
+<div class="policy-meta-row">
+<span class="policy-meta-label">Effective date</span>
+<span class="policy-meta-value">6 July 2026</span>
+</div>
+<div class="policy-meta-row">
+<span class="policy-meta-label">Primary privacy contact</span>
+<span class="policy-meta-value">jd@myogl.biz</span>
+</div>
+<div class="policy-meta-row">
+<span class="policy-meta-label">Website purpose</span>
+<span class="policy-meta-value">Corporate information and professional engagement</span>
+</div>
+</div>
+</div>
+</aside>
+</div>
+</div>
+</section>
+
+<!-- Contact -->
+<section class="policy-section alt">
+<div class="container">
+<div class="contact-panel">
+<div class="contact-copy">
+<p class="section-label">PRIVACY ENQUIRIES</p>
+<h2>Contact MYOGL About a Privacy Matter</h2>
+<p>If you have a question or concern about information you have provided to MYOGL, contact Investor Relations &amp; Corporate Affairs with a clear description of the matter.</p>
+<p>Please do not send passwords, financial account credentials or unnecessary sensitive personal information in an ordinary email.</p>
+<a class="button" href="mailto:jd@myogl.biz?subject=MYOGL%20Privacy%20Enquiry">Send Privacy Enquiry</a>
+</div>
+<aside class="privacy-contact">
+<h3>Primary Contact</h3>
+<p class="privacy-contact-name">Johnathan D'sa</p>
+<p class="privacy-contact-role">Director – Investor Relations &amp; Corporate Affairs</p>
+<a href="mailto:jd@myogl.biz">jd@myogl.biz</a>
+</aside>
+</div>
+</div>
+</section>
+
+</main>
+
+<!-- Footer -->
+<footer class="site-footer">
+<div class="container footer-grid">
+<div>
+<img src="images/logos/corporate-logo.png" alt="Morobe Yawo Oil &amp; Gas Limited" class="footer-logo">
+<p class="footer-company-name">Morobe Yawo Oil &amp; Gas Limited</p>
+<p class="footer-summary">An independent Papua New Guinea energy company focused on responsibly advancing offshore petroleum exploration opportunities through disciplined technical evaluation, strategic partnerships and long-term stakeholder value.</p>
+</div>
+<div>
+<h3>Company</h3>
+<div class="footer-nav">
+<a href="about.html">About MYOGL</a>
+<a href="leadership.html">Leadership</a>
+<a href="news.html">News</a>
+<a href="contact.html">Contact</a>
+</div>
+</div>
+<div>
+<h3>Project &amp; Investment</h3>
+<div class="footer-nav">
+<a href="appl674.html">APPL 674</a>
+<a href="investment.html">Investment Opportunity</a>
+<a href="downloads.html">Downloads</a>
+<a href="contact.html">Investor Relations</a>
+</div>
+</div>
+<div>
+<h3>Investor Relations</h3>
+<div class="footer-nav">
+<p class="footer-ir-name">Johnathan D'sa</p>
+<p class="footer-ir-position">Director – Investor Relations &amp; Corporate Affairs</p>
+<a class="footer-ir-email" href="mailto:jd@myogl.biz">jd@myogl.biz</a>
+<p class="footer-ir-note">For strategic investment discussions, technical partnerships and corporate enquiries relating to APPL 674.</p>
+</div>
+</div>
+</div>
+<div class="container footer-bottom">
+<p>&copy; 2026 Morobe Yawo Oil &amp; Gas Limited. All Rights Reserved.</p>
+<div class="footer-bottom-links">
+<a href="privacy.html">Privacy</a>
+<a href="disclaimer.html">Disclaimer</a>
+</div>
+</div>
+</footer>
+
+<script src="assets/js/script.js"></script>
+</body>
 </html>
