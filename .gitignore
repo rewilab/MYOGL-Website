@@ -1,3 +1,14 @@
 node_modules/
 .DS_Store
 .vscode/
+
+# MYOGL workspace noise
+CHANGE_REPORT_*
+*.docx
+current-appl674-review.html
+temp_hex.txt
+MYOGL_Milestone_1/
+MYOGL_V3_Executive_Foundation/
+image-import/
+development-2026-07-06/
+assets/css/appl674-before-cleanup.css
