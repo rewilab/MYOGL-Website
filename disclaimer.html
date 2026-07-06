@@ -1,15 +1,428 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Disclaimer | MYOGL</title>
-    <link rel="stylesheet" href="assets/css/style.css" />
-  </head>
-  <body>
-    <main class="container section">
-      <h1>Disclaimer</h1>
-      <p class="lead">This disclaimer page is included in the site scaffold.</p>
-    </main>
-  </body>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Legal Disclaimer | Morobe Yawo Oil & Gas Limited</title>
+<meta name="description" content="Legal disclaimer for the Morobe Yawo Oil & Gas Limited corporate website, including APPL 674, international access, investment, technical and Papua New Guinea law notices.">
+<link rel="icon" type="image/png" href="images/logos/icon.png">
+<link rel="stylesheet" href="assets/css/style.css">
+<style>
+/* Disclaimer page only — scoped production layout */
+.disclaimer-page .legal-hero-note{
+  margin-top:1.25rem;padding:1rem 1.1rem;border-left:3px solid var(--accent);
+  background:rgba(255,255,255,.08);color:rgba(255,255,255,.86);
+  font-size:.95rem;line-height:1.65
+}
+.disclaimer-page .legal-section{padding:6rem 0;background:var(--white)}
+.disclaimer-page .legal-section.alt{background:var(--bg)}
+.disclaimer-page .legal-layout{
+  display:grid;grid-template-columns:minmax(0,1fr) 310px;
+  gap:3rem;align-items:start
+}
+.disclaimer-page .legal-content{min-width:0}
+.disclaimer-page .legal-content h2{margin-bottom:1.25rem}
+.disclaimer-page .legal-content h3{
+  color:var(--primary);font-size:1.3rem;line-height:1.4;
+  margin:2rem 0 .75rem
+}
+.disclaimer-page .legal-content p{
+  font-size:1.08rem;line-height:1.8;color:var(--text);margin-bottom:1.25rem
+}
+.disclaimer-page .legal-content ul{margin:0 0 1.5rem 1.35rem}
+.disclaimer-page .legal-content li{
+  font-size:1.05rem;line-height:1.75;color:var(--muted);margin-bottom:.55rem
+}
+.disclaimer-page .legal-content a{color:var(--hero-blue);font-weight:600}
+.disclaimer-page .legal-aside{position:sticky;top:120px}
+.disclaimer-page .legal-card{
+  padding:1.75rem;background:var(--bg);border:1px solid var(--border);
+  border-radius:1.125rem;box-shadow:0 2px 12px rgba(0,0,0,.06)
+}
+.disclaimer-page .legal-card h3{
+  color:var(--accent);text-transform:uppercase;letter-spacing:1.2px;
+  font-size:.85rem;margin-bottom:1rem
+}
+.disclaimer-page .legal-meta{display:grid;gap:.9rem}
+.disclaimer-page .legal-meta-row{padding-bottom:.9rem;border-bottom:1px solid var(--border)}
+.disclaimer-page .legal-meta-row:last-child{padding-bottom:0;border-bottom:0}
+.disclaimer-page .legal-meta-label{display:block;color:var(--muted);font-size:.82rem;margin-bottom:.2rem}
+.disclaimer-page .legal-meta-value{
+  display:block;color:var(--primary);font-size:.95rem;font-weight:700;
+  line-height:1.45;overflow-wrap:anywhere
+}
+.disclaimer-page .safeguard-grid{
+  display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.5rem
+}
+.disclaimer-page .safeguard-card{
+  padding:2rem;background:var(--white);border:1px solid var(--border);
+  border-radius:1.125rem;box-shadow:0 2px 12px rgba(0,0,0,.06)
+}
+.disclaimer-page .safeguard-card h3{color:var(--primary);font-size:1.2rem;margin-bottom:.65rem}
+.disclaimer-page .safeguard-card p{color:var(--muted);font-size:1.02rem;line-height:1.75}
+.disclaimer-page .law-panel{
+  padding:5rem 0;background:var(--primary);color:#fff
+}
+.disclaimer-page .law-grid{
+  max-width:1050px;margin:0 auto;display:grid;
+  grid-template-columns:1fr 1fr;gap:2rem
+}
+.disclaimer-page .law-card{
+  padding:2rem;border:1px solid rgba(255,255,255,.16);
+  border-radius:1.125rem;background:rgba(255,255,255,.06)
+}
+.disclaimer-page .law-card h3{color:var(--accent);font-size:1.15rem;margin-bottom:.75rem}
+.disclaimer-page .law-card p{color:rgba(255,255,255,.84);font-size:1.02rem;line-height:1.75}
+.disclaimer-page .contact-panel{
+  max-width:1000px;margin:0 auto;display:grid;
+  grid-template-columns:1.2fr .8fr;gap:2.5rem;align-items:start;
+  padding:2.5rem;background:var(--white);border:1px solid var(--border);
+  border-radius:1.125rem;box-shadow:0 4px 20px rgba(0,0,0,.08)
+}
+.disclaimer-page .contact-copy p{
+  font-size:1.125rem;line-height:1.8;color:var(--text);margin-bottom:1.25rem
+}
+.disclaimer-page .legal-contact{
+  padding:2rem;background:var(--bg);border:1px solid var(--border);border-radius:1.125rem
+}
+.disclaimer-page .legal-contact h3{
+  color:var(--accent);text-transform:uppercase;letter-spacing:1.3px;
+  font-size:.9rem;margin-bottom:1rem
+}
+.disclaimer-page .legal-contact-name{color:var(--primary);font-size:1.3rem;font-weight:700;margin-bottom:.25rem}
+.disclaimer-page .legal-contact-role{color:var(--hero-blue);font-size:.95rem;font-weight:600;line-height:1.5;margin-bottom:1rem}
+.disclaimer-page .legal-contact a{color:var(--hero-blue);font-weight:700;text-decoration:none}
+.disclaimer-page .snapshot-row{
+  display:grid;grid-template-columns:90px minmax(0,1fr);gap:1rem;align-items:start
+}
+.disclaimer-page .snapshot-value{text-align:left;line-height:1.45;overflow-wrap:anywhere}
+.disclaimer-page .footer-logo{max-width:300px}
+
+@media(max-width:960px){
+  .disclaimer-page .legal-layout{grid-template-columns:1fr}
+  .disclaimer-page .legal-aside{position:static}
+  .disclaimer-page .safeguard-grid{grid-template-columns:1fr 1fr}
+  .disclaimer-page .contact-panel{grid-template-columns:1fr}
+}
+@media(max-width:640px){
+  .disclaimer-page .safeguard-grid,.disclaimer-page .law-grid{grid-template-columns:1fr}
+  .disclaimer-page .snapshot-row{grid-template-columns:1fr;gap:.25rem}
+  .disclaimer-page .footer-logo{max-width:260px}
+}
+@media print{
+  .disclaimer-page .legal-layout{
+    display:grid !important;grid-template-columns:minmax(0,1fr) 58mm !important;gap:6mm !important
+  }
+  .disclaimer-page .legal-aside{position:static !important}
+  .disclaimer-page .safeguard-grid{
+    display:grid !important;grid-template-columns:repeat(3,minmax(0,1fr)) !important;gap:5mm !important
+  }
+  .disclaimer-page .law-grid{
+    display:grid !important;grid-template-columns:1fr 1fr !important;gap:5mm !important
+  }
+  .disclaimer-page .contact-panel{
+    display:grid !important;grid-template-columns:1.2fr .8fr !important;gap:6mm !important
+  }
+  .disclaimer-page .legal-card,.disclaimer-page .safeguard-card,
+  .disclaimer-page .law-card,.disclaimer-page .contact-panel{
+    break-inside:avoid !important;page-break-inside:avoid !important
+  }
+  .disclaimer-page .footer-logo{max-width:65mm !important}
+}
+</style>
+</head>
+<body class="disclaimer-page">
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
+<div class="site-header">
+<div class="container">
+<div class="navbar">
+<a class="brand" href="index.html" aria-label="MYOGL home"><img src="images/logos/header-logo.png" alt="MYOGL" class="brand-logo"></a>
+<nav aria-label="Primary navigation">
+<ul class="nav-links">
+<li><a href="about.html">About</a></li>
+<li><a href="appl674.html">APPL 674</a></li>
+<li><a href="investment.html">Investment</a></li>
+<li><a href="leadership.html">Leadership</a></li>
+<li><a href="news.html">News</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+
+<main id="main-content">
+
+<header class="hero">
+<div class="container">
+<div class="hero-layout">
+<div class="hero-content">
+<p class="section-label">LEGAL DISCLAIMER</p>
+<h1>Important Legal, Regulatory and International Use Notice</h1>
+<p class="lead">This website provides general corporate, project and strategic engagement information concerning Morobe Yawo Oil &amp; Gas Limited and, where expressly identified, APPL 674.</p>
+<p>Access to or use of this website is subject to this Disclaimer. Information must be read in light of Papua New Guinea law, applicable mandatory laws in relevant jurisdictions, the early-stage nature of petroleum exploration and the specific application status of APPL 674.</p>
+<div class="hero-actions">
+<a class="button" href="#full-disclaimer">Read Full Disclaimer</a>
+<a class="button-secondary" href="contact.html">Contact MYOGL</a>
+</div>
+<ul class="hero-tags">
+<li>Papua New Guinea Law</li>
+<li>International Access</li>
+<li>APPL 674 Safeguards</li>
+<li>No Investment Advice</li>
+</ul>
+<div class="legal-hero-note"><strong>Important:</strong> APPL 674 is an exploration application. Nothing on this website should be interpreted as stating or implying that a petroleum licence has been awarded, that a discovery has been made, that reserves or resources have been established, or that commercial production or investment returns are assured.</div>
+</div>
+<aside class="hero-panel">
+<div class="snapshot-card">
+<h3 class="snapshot-heading">LEGAL FRAMEWORK</h3>
+<div class="snapshot-row"><span class="snapshot-key">Company</span><span class="snapshot-value">Morobe Yawo Oil &amp; Gas Limited</span></div>
+<div class="snapshot-row"><span class="snapshot-key">Primary Law</span><span class="snapshot-value">Papua New Guinea</span></div>
+<div class="snapshot-row"><span class="snapshot-key">Access</span><span class="snapshot-value">International Website</span></div>
+<div class="snapshot-row"><span class="snapshot-key">Effective</span><span class="snapshot-value">6 July 2026</span></div>
+</div>
+</aside>
+</div>
+</div>
+</header>
+
+<section class="legal-section alt">
+<div class="container">
+<p class="section-label">CORE SAFEGUARDS</p>
+<h2>How This Website Must Be Read</h2>
+<div class="safeguard-grid">
+<article class="safeguard-card">
+<h3>Application Status</h3>
+<p>References to APPL 674 describe an exploration application and must not be read as evidence of licence award or regulatory approval.</p>
+</article>
+<article class="safeguard-card">
+<h3>No Offer or Advice</h3>
+<p>Website information is general in nature and is not a securities offering, investment recommendation or substitute for professional advice.</p>
+</article>
+<article class="safeguard-card">
+<h3>Cross-Border Compliance</h3>
+<p>International users remain responsible for laws applicable to them, including mandatory securities, sanctions and other cross-border requirements.</p>
+</article>
+</div>
+</div>
+</section>
+
+<section class="law-panel">
+<div class="container">
+<div class="law-grid">
+<article class="law-card">
+<h3>Papua New Guinea Legal Context</h3>
+<p>MYOGL's Papua New Guinea petroleum activities and communications must be understood within the applicable laws of Papua New Guinea, including the petroleum regulatory framework as amended from time to time. References on this website do not replace legislation, regulatory decisions, licence instruments or official records.</p>
+</article>
+<article class="law-card">
+<h3>International and Mandatory Laws</h3>
+<p>To the fullest extent legally permitted, this website and this Disclaimer are governed by Papua New Guinea law. Nothing in this Disclaimer excludes or overrides a mandatory law, right, remedy, regulatory requirement or jurisdiction that cannot lawfully be excluded in another country.</p>
+</article>
+</div>
+</div>
+</section>
+
+<section class="legal-section" id="full-disclaimer">
+<div class="container">
+<div class="legal-layout">
+<article class="legal-content">
+<p class="section-label">FULL DISCLAIMER</p>
+<h2>Website Legal Disclaimer</h2>
+
+<h3>1. Scope and Acceptance</h3>
+<p>This website is operated as the corporate website of Morobe Yawo Oil &amp; Gas Limited ("MYOGL", "we", "us" or "our"). By accessing or using the website, you acknowledge that you have read this Disclaimer and agree that your use of the website is subject to it, to the fullest extent permitted by applicable law.</p>
+<p>If any part of this Disclaimer is inconsistent with a mandatory law that applies to you and cannot lawfully be excluded or limited, that mandatory law prevails only to the extent of the inconsistency.</p>
+
+<h3>2. General Information Only</h3>
+<p>The website provides general corporate, project, stakeholder and strategic engagement information. It is not intended to be a complete statement of any project, legal right, regulatory process, transaction, investment opportunity, technical assessment or commercial arrangement.</p>
+<p>Users should not make material decisions solely on the basis of website content and should obtain current information and appropriate independent professional advice.</p>
+
+<h3>3. APPL 674 — Exploration Application Status</h3>
+<p>APPL 674 is described on this website as an exploration application associated with the Huon Basin, Papua New Guinea. Unless and until a competent authority formally determines otherwise through the applicable legal and regulatory process, references to APPL 674 must not be interpreted as representing that an exploration or development licence has been granted.</p>
+<p>Nothing on this website states or implies:</p>
+<ul>
+<li>award, grant or guaranteed future grant of a petroleum licence;</li>
+<li>regulatory approval or endorsement of MYOGL or any proposed activity;</li>
+<li>a petroleum discovery;</li>
+<li>the existence of proved, probable or other reserves;</li>
+<li>the existence of contingent or prospective resources unless expressly supported by an identified, appropriate and current technical basis;</li>
+<li>commercial viability, development approval or production;</li>
+<li>certainty of financing, partnership, transaction completion or project advancement; or</li>
+<li>guaranteed investment returns.</li>
+</ul>
+
+<h3>4. Papua New Guinea Petroleum and Regulatory Framework</h3>
+<p>Petroleum exploration and development in Papua New Guinea are subject to applicable Papua New Guinea laws, regulations, regulatory processes and official decisions, including the Oil and Gas Act 1998 as amended or replaced from time to time and other applicable legislation and regulatory requirements.</p>
+<p>Website summaries are not legal interpretations of legislation and do not replace the text of any Act, regulation, official notice, licence, application record, decision or direction of a competent authority. Regulatory structures and laws may change.</p>
+
+<h3>5. No Securities Offer, Solicitation or Public Offering</h3>
+<p>Unless expressly stated in a separate, duly authorised and legally compliant document, nothing on this website constitutes or forms part of:</p>
+<ul>
+<li>an offer to issue, sell or transfer securities or other financial products;</li>
+<li>an invitation or solicitation to subscribe for or acquire securities or financial products;</li>
+<li>a prospectus, offering memorandum, product disclosure statement or other regulated offering document;</li>
+<li>a public offering, crowdfunding campaign or collective investment scheme; or</li>
+<li>an assurance that any investment opportunity is legally available in any jurisdiction.</li>
+</ul>
+<p>Any future transaction or investment process would be subject to its own documentation, due diligence, approvals, eligibility requirements and applicable laws.</p>
+
+<h3>6. No Investment, Financial, Legal or Tax Advice</h3>
+<p>Nothing on this website is investment, financial, legal, tax, accounting, petroleum engineering or other professional advice. Nothing is a recommendation to invest, divest, enter into a transaction or adopt a particular strategy.</p>
+<p>Prospective investors, partners and other users should obtain independent advice from appropriately qualified advisers in their relevant jurisdictions.</p>
+
+<h3>7. International Access and Cross-Border Restrictions</h3>
+<p>This website may be accessed from countries outside Papua New Guinea. Availability of website content does not mean that any investment, transaction, security, service or proposed activity is lawful or available in every jurisdiction.</p>
+<p>Users are responsible for compliance with laws and restrictions applicable to them, which may include securities and financial promotion laws, foreign investment rules, exchange controls, sanctions, anti-money laundering and counter-terrorist financing requirements, anti-bribery and corruption laws, export controls, tax laws, privacy rules and other mandatory requirements.</p>
+<p>MYOGL does not represent that website content is appropriate, lawful or available for every person in every country.</p>
+
+<h3>8. Sanctions, Restricted Persons and Unlawful Conduct</h3>
+<p>Nothing on this website is intended to invite or facilitate dealings prohibited by applicable sanctions, export controls, anti-money laundering, counter-terrorist financing, anti-bribery, anti-corruption or other applicable laws. MYOGL reserves the right to decline, suspend or terminate engagement where compliance, integrity, identity, source-of-funds or related concerns arise.</p>
+
+<h3>9. Forward-Looking Statements</h3>
+<p>The website may contain statements concerning plans, intentions, expectations, objectives, strategy, potential, future work, possible partnerships, financing, technical evaluation or other future matters. Such statements are inherently uncertain and may constitute forward-looking statements.</p>
+<p>Actual outcomes may differ materially due to risks including regulatory decisions, exploration results, geology, data quality, financing, market conditions, commodity prices, technical constraints, environmental and social considerations, stakeholder matters, political developments, infrastructure, contractor performance, force majeure, changes in law and other factors.</p>
+<p>MYOGL does not undertake to update every forward-looking statement except where required by applicable law.</p>
+
+<h3>10. Exploration, Geological and Technical Risk</h3>
+<p>Oil and gas exploration is speculative and high risk. Geological interpretation is subject to uncertainty. Data may be incomplete, historical, preliminary, licensed from third parties, subject to interpretation or require further acquisition, processing, reprocessing and technical review.</p>
+<p>No map, diagram, image, technical narrative, basin description or project presentation should be treated as proof of hydrocarbons, discovery, recoverable resources, reserves or commercial development.</p>
+
+<h3>11. Maps, Boundaries, Areas and Measurements</h3>
+<p>Maps and geographic illustrations may be simplified, indicative, schematic or prepared for general presentation. They may not be suitable for navigation, surveying, legal boundary determination or regulatory reliance.</p>
+<p>Area figures, block counts, coordinates, water depths and other measurements should be checked against current authoritative records before material reliance. In the event of inconsistency, applicable official records and legally controlling instruments prevail.</p>
+
+<h3>12. Investment Promotion and Foreign Investment Context</h3>
+<p>International investment and business activity connected with Papua New Guinea may be subject to the Investment Promotion Act 1992, amendments to that Act, requirements administered by the Investment Promotion Authority and other applicable laws. Website content does not constitute certification, approval or exemption under those laws.</p>
+
+<h3>13. Third-Party Information</h3>
+<p>The website may refer to or rely on information from third parties, public sources, advisers, contractors, data providers or other external sources. While reasonable care may be taken, MYOGL does not warrant that all third-party information is complete, current or independently verified.</p>
+<p>Reference to a third party does not necessarily imply endorsement, partnership, agency, authority or responsibility unless expressly confirmed.</p>
+
+<h3>14. External Links</h3>
+<p>Links to third-party websites are provided for convenience or context. MYOGL does not control and is not responsible for third-party content, availability, security, privacy practices or accuracy. A link does not necessarily constitute endorsement.</p>
+
+<h3>15. Accuracy, Completeness and Updates</h3>
+<p>MYOGL aims to present responsible corporate information but does not warrant that every item is error-free, complete, continuously current or suitable for a user's particular purpose. Information may change without notice, and older materials may become outdated.</p>
+<p>Users considering material reliance should request current information directly from MYOGL and conduct independent verification.</p>
+
+<h3>16. Documents and Downloadable Materials</h3>
+<p>Downloadable or request-based materials may carry separate terms, confidentiality restrictions, dates, assumptions and disclaimers. In the event of inconsistency, a specific executed agreement or legally controlling document may prevail according to its terms and applicable law.</p>
+
+<h3>17. Confidentiality and Unsolicited Information</h3>
+<p>Do not assume that information sent to a general website or email address is confidential merely because it has been submitted. Confidentiality should be governed by an appropriate written agreement where required.</p>
+<p>Users should not send trade secrets, passwords, financial credentials or unnecessary sensitive information through ordinary email.</p>
+
+<h3>18. Intellectual Property</h3>
+<p>Unless otherwise indicated, website content, branding, layout and original materials may be protected by applicable intellectual property laws. No ownership rights are transferred by access to the website. Third-party marks and materials remain subject to the rights of their respective owners.</p>
+
+<h3>19. Website Availability and Security</h3>
+<p>MYOGL does not guarantee uninterrupted, error-free or secure availability of the website. Access may be suspended, modified or withdrawn for maintenance, security, technical, legal or other reasons.</p>
+<p>To the fullest extent permitted by law, users are responsible for protecting their own devices, systems and data when accessing internet services.</p>
+
+<h3>20. Limitation of Reliance and Liability</h3>
+<p>To the fullest extent permitted by applicable law, MYOGL excludes warranties and conditions that may lawfully be excluded in relation to this website and its content. To the fullest extent permitted by law, MYOGL will not be liable for loss arising solely from reliance on general website information where the user has not undertaken appropriate independent verification and professional review.</p>
+<p>Nothing in this Disclaimer excludes, restricts or modifies liability, rights or remedies that cannot lawfully be excluded, restricted or modified.</p>
+
+<h3>21. Governing Law</h3>
+<p>To the fullest extent legally permitted, this Disclaimer, the operation of this website and disputes arising directly from use of this website are governed by the laws of Papua New Guinea, without this clause purporting to exclude mandatory laws that cannot lawfully be excluded in another jurisdiction.</p>
+
+<h3>22. Jurisdiction</h3>
+<p>To the fullest extent legally permitted, and subject to any mandatory jurisdiction that cannot lawfully be excluded, users submit to the jurisdiction of the competent courts of Papua New Guinea in relation to disputes arising directly from this website or this Disclaimer.</p>
+<p>This website jurisdiction clause does not replace a separate dispute-resolution, governing-law, arbitration or jurisdiction clause contained in a duly executed contract between MYOGL and another party.</p>
+
+<h3>23. Severability</h3>
+<p>If a provision of this Disclaimer is held invalid, unlawful or unenforceable, it should be interpreted or severed to the minimum extent necessary, while the remaining provisions continue to operate to the fullest extent permitted by law.</p>
+
+<h3>24. Changes to This Disclaimer</h3>
+<p>MYOGL may revise this Disclaimer to reflect changes in the website, law, regulation, corporate practice or other relevant circumstances. The effective date should be updated when a revised version is published.</p>
+
+<h3>25. Contact</h3>
+<p>Questions concerning website information, APPL 674 communications or this Disclaimer may be directed to Investor Relations &amp; Corporate Affairs at <a href="mailto:jd@myogl.biz?subject=MYOGL%20Legal%20Disclaimer%20Enquiry">jd@myogl.biz</a>.</p>
+</article>
+
+<aside class="legal-aside">
+<div class="legal-card">
+<h3>Disclaimer Details</h3>
+<div class="legal-meta">
+<div class="legal-meta-row"><span class="legal-meta-label">Organisation</span><span class="legal-meta-value">Morobe Yawo Oil &amp; Gas Limited</span></div>
+<div class="legal-meta-row"><span class="legal-meta-label">Primary governing law</span><span class="legal-meta-value">Papua New Guinea</span></div>
+<div class="legal-meta-row"><span class="legal-meta-label">International access</span><span class="legal-meta-value">Subject to applicable mandatory laws</span></div>
+<div class="legal-meta-row"><span class="legal-meta-label">APPL 674 status</span><span class="legal-meta-value">Exploration Application</span></div>
+<div class="legal-meta-row"><span class="legal-meta-label">Effective date</span><span class="legal-meta-value">6 July 2026</span></div>
+</div>
+</div>
+</aside>
+</div>
+</div>
+</section>
+
+<section class="legal-section alt">
+<div class="container">
+<div class="contact-panel">
+<div class="contact-copy">
+<p class="section-label">LEGAL &amp; CORPORATE ENQUIRIES</p>
+<h2>Request Clarification from MYOGL</h2>
+<p>If you require clarification concerning website information, APPL 674 communications or the intended status of published material, contact Investor Relations &amp; Corporate Affairs.</p>
+<p>For legal, investment or transaction decisions, obtain independent professional advice appropriate to your jurisdiction and circumstances.</p>
+<a class="button" href="mailto:jd@myogl.biz?subject=MYOGL%20Website%20Disclaimer%20Enquiry">Send Enquiry</a>
+</div>
+<aside class="legal-contact">
+<h3>Primary Contact</h3>
+<p class="legal-contact-name">Johnathan D'sa</p>
+<p class="legal-contact-role">Director – Investor Relations &amp; Corporate Affairs</p>
+<a href="mailto:jd@myogl.biz">jd@myogl.biz</a>
+</aside>
+</div>
+</div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+<div class="container footer-grid">
+<div>
+<img src="images/logos/corporate-logo.png" alt="Morobe Yawo Oil &amp; Gas Limited" class="footer-logo">
+<p class="footer-company-name">Morobe Yawo Oil &amp; Gas Limited</p>
+<p class="footer-summary">An independent Papua New Guinea energy company focused on responsibly advancing offshore petroleum exploration opportunities through disciplined technical evaluation, strategic partnerships and long-term stakeholder value.</p>
+</div>
+<div>
+<h3>Company</h3>
+<div class="footer-nav">
+<a href="about.html">About MYOGL</a>
+<a href="leadership.html">Leadership</a>
+<a href="news.html">News</a>
+<a href="contact.html">Contact</a>
+</div>
+</div>
+<div>
+<h3>Project &amp; Investment</h3>
+<div class="footer-nav">
+<a href="appl674.html">APPL 674</a>
+<a href="investment.html">Investment Opportunity</a>
+<a href="downloads.html">Downloads</a>
+<a href="contact.html">Investor Relations</a>
+</div>
+</div>
+<div>
+<h3>Investor Relations</h3>
+<div class="footer-nav">
+<p class="footer-ir-name">Johnathan D'sa</p>
+<p class="footer-ir-position">Director – Investor Relations &amp; Corporate Affairs</p>
+<a class="footer-ir-email" href="mailto:jd@myogl.biz">jd@myogl.biz</a>
+<p class="footer-ir-note">For strategic investment discussions, technical partnerships and corporate enquiries relating to APPL 674.</p>
+</div>
+</div>
+</div>
+<div class="container footer-bottom">
+<p>&copy; 2026 Morobe Yawo Oil &amp; Gas Limited. All Rights Reserved.</p>
+<div class="footer-bottom-links">
+<a href="privacy.html">Privacy</a>
+<a href="disclaimer.html">Disclaimer</a>
+</div>
+</div>
+</footer>
+
+<script src="assets/js/script.js"></script>
+</body>
 </html>
