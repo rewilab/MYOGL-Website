@@ -626,7 +626,7 @@
 .appl674-hero .hero-stats {
   display: grid !important;
   grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
-  gap: 1rem !important;
+  gap: 2rem !important;
 }
 
 .appl674-hero .hero-stat {
