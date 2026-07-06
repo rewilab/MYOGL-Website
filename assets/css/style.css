@@ -421,3 +421,6 @@ section h2{font-size:2.25rem;font-weight:700;color:var(--primary);margin-bottom:
 
 /* Soft section background utility */
 .section-soft{background:var(--bg)}
+
+/* Investment page burgundy accent */
+body.investment-page .section-label{color:#7A1F2B;font-weight:800}
