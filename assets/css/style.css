@@ -418,3 +418,6 @@ section h2{font-size:2.25rem;font-weight:700;color:var(--primary);margin-bottom:
   }
 }
 
+
+/* Soft section background utility */
+.section-soft{background:var(--bg)}
