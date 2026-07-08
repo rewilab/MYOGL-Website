@@ -556,7 +556,7 @@
   display: flex !important;
   align-items: center !important;
   justify-content: space-between !important;
-  gap: 2rem !important;
+  gap: 1.25rem !important;
   width: 100% !important;
   padding: 1rem 0 !important;
 }
@@ -626,7 +626,7 @@
 .appl674-hero .hero-stats {
   display: grid !important;
   grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
-  gap: 2rem !important;
+  gap: 1.25rem !important;
 }
 
 .appl674-hero .hero-stat {
@@ -695,4 +695,12 @@
 .appl674-hero .stat-number,
 .appl674-hero .stat-label {
   color: #ffffff;
+}
+
+/* APPL 674 light-background burgundy label treatment */
+.section-intro .section-label,
+.project-snapshot .section-label {
+  color: #7A1F2B;
+  font-size: 1.7rem;
+  font-weight: 700;
 }
