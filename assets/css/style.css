@@ -476,7 +476,7 @@ body.investment-page .section-label{color:#7A1F2B;font-size:1.7rem;font-weight:8
   body.home-page .site-header > .container {
     max-width: none;
     width: 100%;
-    padding-left: 16px;
+    padding-left: 4px;
     padding-right: 16px;
   }
 
