@@ -6,7 +6,7 @@ A simple starter foundation for the MYOGL website project.
 
 - `index.html` — main landing page
 - `assets/css/style.css` — site styling
-- `assets/js/main.js` — shared page initialization
+- `assets/js/script.js` — shared site behaviour; page-specific scripts support APPL 674 and the PNG identity carousel
 
 ## Run locally
 

@@ -34,9 +34,9 @@ MYOGL-Website/
 │   │   ├── typography.css
 │   │   └── variables.css
 │   └── js/
-│       ├── animations.js
-│       ├── main.js
-│       └── navigation.js
+│       ├── appl674.js
+│       ├── png-identity.js
+│       └── script.js
 └── images/
     ├── hero/
     │   └── hero-energy.svg
@@ -84,9 +84,10 @@ MYOGL-Website/
 
 ## 4. List of all JavaScript files
 
-- assets/js/animations.js
-- assets/js/main.js
-- assets/js/navigation.js
+- assets/js/appl674.js
+- assets/js/png-identity.js
+- assets/js/script.js
+
 
 ## 5. Images and assets
 
