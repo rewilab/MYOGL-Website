@@ -471,7 +471,7 @@ body.investment-page .section-label{color:#7A1F2B;font-size:1.7rem;font-weight:8
   font-weight: 700;
 }
 
-/* Homepage-only wide header alignment */
+/* Homepage-only wide header and navigation alignment */
 @media (min-width: 1100px) {
   body.home-page .site-header > .container {
     max-width: none;
@@ -488,28 +488,6 @@ body.investment-page .section-label{color:#7A1F2B;font-size:1.7rem;font-weight:8
     margin-right: auto;
   }
 
-  body.home-page .nav-links {
-    margin-left: auto;
-    justify-content: flex-end;
-    gap: 16px;
-  }
-}
-
-
-/* Homepage navigation wider text treatment without increasing height */
-@media (min-width: 1100px) {
-  body.home-page .nav-links {
-    gap: 12px;
-  }
-
-  body.home-page .nav-links a {
-    letter-spacing: 0.45px;
-    white-space: nowrap;
-  }
-}
-
-/* Homepage navigation centred between logo and right banner edge */
-@media (min-width: 1100px) {
   body.home-page .navbar > nav {
     flex: 1;
     min-width: 0;
@@ -519,5 +497,11 @@ body.investment-page .section-label{color:#7A1F2B;font-size:1.7rem;font-weight:8
     width: 100%;
     margin-left: 0;
     justify-content: center;
+    gap: 12px;
+  }
+
+  body.home-page .nav-links a {
+    letter-spacing: 0.45px;
+    white-space: nowrap;
   }
 }
