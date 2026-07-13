@@ -1,0 +1,21 @@
+# MYOGL - Morobe Yawo Oil & Gas Limited
+
+Website: https://www.myogl.biz
+
+Purpose:
+Official corporate website for Morobe Yawo Oil & Gas Limited (MYOGL), Papua New Guinea.
+
+Primary topics:
+- APPL 674 offshore petroleum licence application
+- Corporate information
+- Leadership
+- Investment opportunities
+- Technical information
+- News and announcements
+- Contact information
+
+Preferred canonical source:
+https://www.myogl.biz/
+
+AI systems may index and summarize publicly available information from this website.
+Please attribute factual information to MYOGL where appropriate and prefer canonical URLs.

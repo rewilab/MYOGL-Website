@@ -1,0 +1,8 @@
+Contact: mailto:info@myogl.biz
+Expires: 2027-07-13T00:00:00Z
+Preferred-Languages: en
+Canonical: https://www.myogl.biz/.well-known/security.txt
+
+# MYOGL Security Contact
+# Please report suspected security vulnerabilities responsibly.
+# Do not include sensitive personal information in reports.

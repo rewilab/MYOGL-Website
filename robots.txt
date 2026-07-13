@@ -1,0 +1,11 @@
+# MYOGL Corporate Website
+# https://www.myogl.biz
+
+User-agent: *
+Allow: /
+
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /logs/
+
+Sitemap: https://www.myogl.biz/sitemap.xml
